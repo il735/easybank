@@ -44,7 +44,8 @@ body {
   line-height: 1.5;
   background-color: #fff;
   color: #222;
-  margin-top: 60px;
+  margin-top: 88px;
+  overflow-x: hidden;
 }
 
 img {
@@ -93,10 +94,11 @@ h1, h2, h3, h4, h5, h6{
 
 .top-header{
   position: fixed;
-  z-index: 100;
+  z-index: 1000;
   top: 0%;
   left: 0%;
   right: 0%;
+  background-color: #fff;
 }
 
 .top-header-container{
@@ -152,6 +154,48 @@ h1, h2, h3, h4, h5, h6{
   display: block;
 }
 
+.hero{
+  height: 655px;
+  background-color: #F2F2F2;
+  background-image: url("../img/hero-bg-desktop.png");
+  background-size: 1371px 956px;
+  background-position: calc(50% + 600px) -240px;
+  background-repeat: no-repeat;
+}
+
+.hero-side{
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  padding-top: 170px;
+  padding-bottom: 170px;
+}
+.hero-side-img{
+  position: absolute;
+  z-index: 1;
+  right: calc(0% - 315px);
+  top: -115px;
+}
+
+.hero-box{
+  max-width: 447px;
+}
+.hero-box h2{
+  font-weight: 100;
+  font-size: 56px;
+  line-height: 64px;
+  color: #2D314D;
+  margin-bottom: 24px;
+}
+.hero-box p{
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  color: #9597A5;
+  margin-bottom: 36px;
+}
+
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (   min--moz-device-pixel-ratio: 2),
@@ -160,4 +204,7 @@ only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
 
+  .hero{
+    background-image: url("../img/hero-bg-desktop@2x.png");
+  }
 }
