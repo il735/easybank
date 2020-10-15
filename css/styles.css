@@ -146,12 +146,13 @@ h1, h2, h3, h4, h5, h6{
   width: 100%;
   height: 4px;
   bottom: -32px;
-  background-color: #33D35E;
-  display: none;
+  background-color: transparent;
+  display: block;
+  transition: 0.5s ease;
 }
 
-.sitenav-list-item:hover  .sitenav-list-link::after{
-  display: block;
+.sitenav-list-link:hover::after{
+  background-color: #33D35E;
 }
 
 .hero{
